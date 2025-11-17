@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency SOS - Always-On Protection | AIDER</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/sos.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🛡️ AIDER</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sos.html" class="active">SOS</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="calm.html">Calm Zone</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="sos-section">
+        <div class="container">
+            <h1 class="sos-title">
+                🚨 Emergency SOS System
+            </h1>
+            <p class="sos-subtitle">Voice recognition automatically active - Say "Help" or "Emergency" twice for instant assistance</p>
+
+            <!-- Microphone Permission Notice -->
+            <div class="mic-permission-notice">
+                <div class="icon">🎤</div>
+                <div>
+                    <strong>First Time Setup:</strong>
+                    <p>Please allow microphone access when prompted. This enables automatic voice monitoring for your safety and security.</p>
+                </div>
+            </div>
+
+            <!-- SOS Status Display -->
+            <div class="sos-status" id="sosStatus">
+                <div class="status-indicator" id="statusIndicator">
+                    <div class="pulse-dot"></div>
+                </div>
+                <p id="statusText">Initializing voice recognition...</p>
+                <p class="help-count" id="helpCount">Help count: 0/2</p>
+                <span class="status-badge status-active" id="statusBadge">● MONITORING</span>
+            </div>
+
+            <!-- Control Buttons -->
+            <div class="sos-controls">
+                <button class="btn-sos" id="startSOS">Restart Voice Recognition</button>
+                <button class="btn-stop" id="stopSOS">Pause Recognition</button>
+                <button class="btn-emergency" id="manualSOS">🚨 Manual Emergency Alert</button>
+            </div>
+
+            <!-- Feature Highlights -->
+            <div class="feature-highlights">
+                <div class="feature-card">
+                    <div class="icon">🎤</div>
+                    <h4>Always Listening</h4>
+                    <p>Automatic voice monitoring starts when you open this page - no manual setup required</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">⚡</div>
+                    <h4>5-Second Auto-Call</h4>
+                    <p>Police (100) will be called automatically in 5 seconds unless you cancel</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🔒</div>
+                    <h4>Private & Secure</h4>
+                    <p>All voice processing happens locally on your device - completely private</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">📍</div>
+                    <h4>Location Sharing</h4>
+                    <p>Automatically shares your GPS location with emergency services</p>
+                </div>
+            </div>
+
+            <!-- Instructions -->
+            <div class="instructions">
+                <h3>📋 How the Always-On System Works:</h3>
+                <ol>
+                    <li><strong>Automatic Activation:</strong> Voice recognition starts automatically when you open this page</li>
+                    <li><strong>Voice Trigger:</strong> Say "Help" or "Emergency" clearly twice within 5 seconds</li>
+                    <li><strong>5-Second Countdown:</strong> System shows countdown timer before calling police</li>
+                    <li><strong>Cancel Option:</strong> Press "STOP - False Alarm" button if it was a mistake</li>
+                    <li><strong>Auto-Call:</strong> After countdown, system automatically calls Police (100)</li>
+                    <li><strong>Manual Override:</strong> Use the red "Manual Emergency Alert" button for instant help</li>
+                </ol>
+                
+                <div style="background: linear-gradient(135deg, #fff3cd, #ffe8a1); padding: 20px; border-radius: 12px; margin-top: 20px; border-left: 5px solid #ffc107; box-shadow: 0 4px 15px rgba(255, 193, 7, 0.2);">
+                    <strong>⚠️ Important Safety Information:</strong>
+                    <p style="margin: 10px 0 0; color: #856404;">Keep this tab open and active for continuous protection. Voice recognition may pause if you switch tabs or minimize the browser. The system will automatically restart recognition after emergency calls.</p>
+                </div>
+            </div>
+
+            <!-- Quick Emergency Contacts -->
+            <div class="quick-contacts">
+                <h3>📞 Quick Emergency Contacts</h3>
+                <div class="contact-grid">
+                    <a href="tel:100" class="contact-card urgent">
+                        <span class="contact-icon">👮</span>
+                        <h4>Police</h4>
+                        <p>100</p>
+                    </a>
+                    <a href="tel:112" class="contact-card urgent">
+                        <span class="contact-icon">🚨</span>
+                        <h4>Emergency</h4>
+                        <p>112</p>
+                    </a>
+                    <a href="tel:1091" class="contact-card urgent">
+                        <span class="contact-icon">👩</span>
+                        <h4>Women Helpline</h4>
+                        <p>1091</p>
+                    </a>
+                    <a href="tel:108" class="contact-card">
+                        <span class="contact-icon">🚑</span>
+                        <h4>Ambulance</h4>
+                        <p>108</p>
+                    </a>
+                    <a href="tel:1098" class="contact-card">
+                        <span class="contact-icon">👶</span>
+                        <h4>Child Helpline</h4>
+                        <p>1098</p>
+                    </a>
+                    <a href="tel:181" class="contact-card">
+                        <span class="contact-icon">🆘</span>
+                        <h4>Women in Distress</h4>
+                        <p>181</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Safety Tips -->
+            <div class="instructions" style="margin-top: 30px;">
+                <h3>🛡️ Emergency Response Tips:</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 15px; background: linear-gradient(135deg, #f8f9fa, #e9ecef); margin: 10px 0; border-radius: 10px; border-left: 4px solid #667eea;">
+                        <strong>✓ Voice Activation:</strong> Speak clearly and at normal volume when triggering the alert - no need to shout
+                    </li>
+                    <li style="padding: 15px; background: linear-gradient(135deg, #f8f9fa, #e9ecef); margin: 10px 0; border-radius: 10px; border-left: 4px solid #667eea;">
+                        <strong>✓ 5-Second Window:</strong> You have 5 seconds to cancel if it's a false alarm - press the STOP button
+                    </li>
+                    <li style="padding: 15px; background: linear-gradient(135deg, #f8f9fa, #e9ecef); margin: 10px 0; border-radius: 10px; border-left: 4px solid #667eea;">
+                        <strong>✓ Stay Calm:</strong> When police are called, stay on the line and provide your location and situation
+                    </li>
+                    <li style="padding: 15px; background: linear-gradient(135deg, #f8f9fa, #e9ecef); margin: 10px 0; border-radius: 10px; border-left: 4px solid #667eea;">
+                        <strong>✓ Regular Testing:</strong> Test the system periodically but always cancel the countdown to avoid false alarms
+                    </li>
+                    <li style="padding: 15px; background: linear-gradient(135deg, #f8f9fa, #e9ecef); margin: 10px 0; border-radius: 10px; border-left: 4px solid #667eea;">
+                        <strong>✓ Share & Save:</strong> Bookmark this page and share with friends and family for their safety
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Browser Compatibility -->
+            <div style="background: white; padding: 25px; border-radius: 12px; margin-top: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                <h4 style="color: #2c3e50; margin-bottom: 15px;">🌐 Browser Compatibility:</h4>
+                <p style="color: #7f8c8d; margin-bottom: 10px;">This system works best on:</p>
+                <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 10px;">
+                    <span style="padding: 8px 15px; background: #e8f5e9; color: #2e7d32; border-radius: 8px; font-weight: 600;">✓ Chrome</span>
+                    <span style="padding: 8px 15px; background: #e8f5e9; color: #2e7d32; border-radius: 8px; font-weight: 600;">✓ Edge</span>
+                    <span style="padding: 8px 15px; background: #e8f5e9; color: #2e7d32; border-radius: 8px; font-weight: 600;">✓ Safari</span>
+                    <span style="padding: 8px 15px; background: #fff3e0; color: #e65100; border-radius: 8px; font-weight: 600;">⚠ Firefox (Limited)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AIDER - Always-On Emergency Protection System. All rights reserved.</p>
+            <p style="margin-top: 10px;">🚨 Emergency Hotlines: 100 (Police) | 112 (National Emergency) | 1091 (Women Helpline) | 108 (Ambulance)</p>
+            <p style="margin-top: 5px; font-size: 0.9em; opacity: 0.8;">Your safety is our priority. Stay alert, stay safe.</p>
+        </div>
+    </footer>
+
+    <script src="js/sos.js"></script>
+</body>
+</html>

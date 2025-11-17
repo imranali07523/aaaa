@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - SafeGuard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/feedback.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon"><img src="img/logo.png" alt="" height="40px"></div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sos.html">SOS</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="calm.html">Calm Zone</a></li>
+                <li><a href="feedback.html" class="active">Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="feedback-section">
+        <div class="container">
+            <h1>We Value Your Feedback</h1>
+            <p class="subtitle">Help us improve AIDER by sharing your suggestions, experiences, or reporting issues</p>
+
+            <div class="feedback-container">
+                <form id="feedbackForm" class="feedback-form">
+                    <div class="form-group">
+                        <label for="name">Name (Optional)</label>
+                        <input type="text" id="name" placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email (Optional)</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Feedback Category *</label>
+                        <select id="category" required>
+                            <option value="">Select a category</option>
+                            <option value="suggestion">Suggestion</option>
+                            <option value="bug">Report a Bug</option>
+                            <option value="experience">Share Experience</option>
+                            <option value="feature">Feature Request</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rating">Rate Your Experience *</label>
+                        <div class="rating-stars" id="ratingStars">
+                            <span class="star" data-rating="1">☆</span>
+                            <span class="star" data-rating="2">☆</span>
+                            <span class="star" data-rating="3">☆</span>
+                            <span class="star" data-rating="4">☆</span>
+                            <span class="star" data-rating="5">☆</span>
+                        </div>
+                        <input type="hidden" id="rating" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message *</label>
+                        <textarea id="message" rows="6" placeholder="Share your thoughts, suggestions, or report issues..." required></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="anonymous" name="anonymous">
+                        <label for="anonymous">Submit anonymously</label>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Submit Feedback</button>
+                </form>
+
+                <div class="feedback-info">
+                    <h3>Why Your Feedback Matters</h3>
+                    <ul>
+                        <li>🎯 Help us improve our services</li>
+                        <li>💡 Suggest new features</li>
+                        <li>🐛 Report bugs or issues</li>
+                        <li>📖 Share your safety experiences</li>
+                        <li>🤝 Build a safer community together</li>
+                    </ul>
+
+                    <div class="contact-options">
+                        <h3>Other Ways to Reach Us</h3>
+                        <p>📧 Email: support@AIDER.com</p>
+                        <p>📞 Helpline: 1800-XXX-XXXX</p>
+                        <p>⏰ Available 24/7</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="success-message" id="successMessage">
+                <div class="success-content">
+                    <span class="success-icon">✅</span>
+                    <h3>Thank You!</h3>
+                    <p>Your feedback has been submitted successfully. We appreciate your input.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AIDER. All rights reserved. | Your safety matters.</p>
+            <p>Emergency: 100 (Police) | 112 (National Emergency)</p>
+        </div>
+    </footer>
+
+    <script src="js/feedback.js"></script>
+</body>
+</html>

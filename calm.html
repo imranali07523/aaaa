@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calm Zone - SafeGuard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/calm.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🛡️ AIDER</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sos.html">SOS</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="calm.html" class="active">Calm Zone</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="calm-section">
+        <div class="container">
+            <h1>🎵 Calm Zone - Find Your Peace</h1>
+            <p class="subtitle">Relax with soothing music and inspiring quotes</p>
+
+            <div class="music-player">
+                <h2>Calming Sounds</h2>
+                <div class="player-controls">
+                    <select id="musicSelect" class="music-selector">
+                        <option value="">Select a calming sound</option>
+                        <option value="rain">Gentle Rain</option>
+                        <option value="ocean">Ocean Waves</option>
+                        <option value="forest">Forest Ambience</option>
+                        <option value="meditation">Meditation Music</option>
+                    </select>
+                    <div class="player-buttons">
+                        <button id="playBtn" class="control-btn">▶️ Play</button>
+                        <button id="pauseBtn" class="control-btn">⏸️ Pause</button>
+                        <button id="stopBtn" class="control-btn">⏹️ Stop</button>
+                    </div>
+                </div>
+                <div class="volume-control">
+                    <label for="volumeSlider">Volume:</label>
+                    <input type="range" id="volumeSlider" min="0" max="100" value="50">
+                    <span id="volumeValue">50%</span>
+                </div>
+                <p class="player-info" id="playerInfo">Select a sound to begin</p>
+            </div>
+
+            <div class="quotes-section">
+                <h2>Inspirational Safety Quotes</h2>
+                <div class="quote-display" id="quoteDisplay">
+                    <p class="quote-text" id="quoteText">
+                        "Your safety is not just a priority, it's a necessity. Take care of yourself."
+                    </p>
+                    <p class="quote-author">- SafeGuard</p>
+                </div>
+                <button class="btn-quote" id="newQuoteBtn">Get New Quote</button>
+            </div>
+
+            <div class="breathing-exercise">
+                <h2>Breathing Exercise</h2>
+                <p>Follow the circle to calm your mind</p>
+                <div class="breathing-circle" id="breathingCircle">
+                    <div class="breath-text" id="breathText">Click Start</div>
+                </div>
+                <div class="breathing-controls">
+                    <button class="btn-breathing" id="startBreathing">Start Exercise</button>
+                    <button class="btn-breathing" id="stopBreathing">Stop</button>
+                </div>
+            </div>
+
+            <div class="relaxation-tips">
+                <h2>Quick Relaxation Tips</h2>
+                <div class="tips-grid">
+                    <div class="relaxation-card">
+                        <div class="relax-icon">🧘</div>
+                        <h3>Deep Breathing</h3>
+                        <p>Breathe in for 4 counts, hold for 4, exhale for 4. Repeat 5 times.</p>
+                    </div>
+                    <div class="relaxation-card">
+                        <div class="relax-icon">💭</div>
+                        <h3>Positive Thoughts</h3>
+                        <p>Replace negative thoughts with positive affirmations. You are strong.</p>
+                    </div>
+                    <div class="relaxation-card">
+                        <div class="relax-icon">🚶</div>
+                        <h3>Take a Walk</h3>
+                        <p>A short walk in a safe area can clear your mind and reduce stress.</p>
+                    </div>
+                    <div class="relaxation-card">
+                        <div class="relax-icon">☎️</div>
+                        <h3>Talk to Someone</h3>
+                        <p>Reach out to a trusted friend, family member, or counselor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AIDER. All rights reserved. | Your safety matters.</p>
+            <p>Emergency: 100 (Police) | 112 (National Emergency)</p>
+        </div>
+    </footer>
+
+    <script src="js/calm.js"></script>
+</body>
+</html>
